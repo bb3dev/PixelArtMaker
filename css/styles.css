@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Press Start 2P',cursive, sans-serif;
+    margin: auto;
+    padding: 0;
+     height: 100%;
+     width: 60%;
+    text-align: center;
+    top:0;
+}
+#power-section{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px auto 30px auto;
+}
+#power {
+    width: auto;
+    margin:auto;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    text-align: right;
+    
+}
+div .mobile {
+    display: none;
+}
+/*All divs wrapping content */
+.container{
+    margin: 10px auto 10px auto;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(128, 95, 175);
+    border: 6px outset grey;
+    border-radius: 22px;
+}
+
+#greenLED{
+    border-radius: 50%;
+    height:15px;
+    width: 15px;
+    background-color: greenyellow;
+    border: .5px solid black;
+    box-shadow: 1px 2px rgba(44, 44, 44, .8);
+    margin-right: 10px;
+}
+#GBLayout-Landscape {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 10px;
+    align-items: center;
+}
+.canvas{
+    background-color: rgb(190, 190, 190);
+    border: 25px solid black;
+    border-radius: 5px;
+    width:60%;
+    margin: 0;
+    min-width: 266px;
+    box-shadow: 1px 2px rgba(44, 44, 44, .8);
+}
+#pixelLogo{
+    background-color: black;
+    color: rgb(229, 225, 239);
+    padding: 15px 5px;
+    width:100%;
+}
+.button{
+    background-color: black;
+    color: grey;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:6px;
+    
+}
+
+.dPad-button{
+    background-color: transparent;
+    color: grey;
+    border-color: transparent;
+}
+.directionalPad{
+    height: 125px;
+    width: 125px;
+    align-items: center;
+    
+}
+.A-button{
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 1px 2px rgba(44, 44, 44, .8);
+}
+.B-button{
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 1px 2px rgba(44, 44, 44, .8);
+}
+.AB-buttons{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+
+}
+.selection{
+    margin: 10px auto 10px auto;
+    padding: 10px 10px 10px 10px;
+}
+
+#pixelCanvas{
+    background-color: white;
+}
+
+#createGrid{
+border-radius: 20px;
+padding: 8px;
+box-shadow: 1px 2px rgba(44, 44, 44, .8);
+}
+#resetGrid {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 1px 2px rgba(44, 44, 44, .8);
+}
+
+#sizePicker{
+    font-family: 'Press Start 2P', cursive;
+    font-size: .3em;
+}
+
+span{
+    text-shadow: 3px 3px black;
+}
+
+table,
+tr,
+td {
+    
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+tr {
+    height: 40px;
+}
+
+td {
+    width: 40px;
+}
+
+input[type=number] {
+    width: 3em;
+}
+/* Footer styles*/
+footer {
+    background: #333;
+    color: gray;
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+/* Media queries and responsive styles*/
+@media screen and (max-width: 1060px){
+    div .desktop{
+        display: none;
+    }
+    #GBLayout-Portrait{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 10px;
+    align-items: center;
+    }
+    #GBLayout-Landscape {
+        display: flex;
+        flex-direction: column;
+    }
+    div .mobile{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+    .container{
+        min-width: 375px;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--this script links the jQuery CDN hosted by Google--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <section id="power-section">  
+        <div id="power">
+                 <div id="greenLED"></div>
+                 <div>Power</div>
+          </div>
+        </section>
+        <section id="GBLayout-Landscape">
+        <div id="dPad" class="desktop">
+            <button class="dPad-button button" type="button" title="D-pad">
+            <img class="directionalPad" src="http://bit.ly/2V8AvSq" alt="D-Pad">
+            </button>
+        </div>
+        <div class="canvas">
+            <table id="pixelCanvas"></table>
+            <div id="pixelLogo">Pixel Boy</div>
+        </div>
+        <div class="AB-buttons desktop">
+            <button class="B-button button" type="button" title="B button">B</button>
+            <button class="A-button button" type="button" title="A button">A</button>
+        </div>
+        <br>
+        <!--Mobile button layout -->
+        <section id="GBLayout-Portrait">
+        <div class="dPad mobile">
+            <button class="dPad-button button"  type="button" title="D-pad">
+                <img class="directionalPad" src="http://bit.ly/2V8AvSq" alt="D-Pad">
+            </button>
+        </div>
+        <div class="AB-buttons mobile">
+            <button class="B-button button" type="button" title="B button">B</button>
+            <button class="A-button button" type="button" title="A button">A</button>
+        </div>
+        </section>
+        </section>
+
+    <div class="selection">
+    
+    <form id="sizePicker">
+        Width<input type="number" id="inputHeight" name="height" min="1" value="5">
+        Height<input type="number" id="inputWidth" name="width" min="1" value="5">
+        Color<input type="color" id="colorPicker">
+        <br>
+        <button class="button" type="button" id="createGrid" title="Creates a grid">Start</button>
+        <button class="button" type="button" id="resetGrid" 
+        title="Clears the colors from the grid so you can start over">Clear
+        </button>
+        
+    </form>
+    
+</div>
+</div>
+<h3>Pixel Art Maker</h3>
+<p>Choose the size of your grid and the color. Click a square on the grid to color it and double click it to erase it.
+    Enjoy! </p>
+<footer><span> &copy; Created by Bernard A. Barnes III</span></footer>
+    <script src="designs.js"></script>
+</body>
+</html>
